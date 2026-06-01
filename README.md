@@ -43,24 +43,7 @@ Trained model weights are available on Google Drive:
 | Optimizer | AdamW |
 | Pre-trained weights | COCO |
 
-## Requirements
-
-```bash
-pip install ultralytics roboflow
-```
-
-## Usage
-
-```python
-from ultralytics import YOLO
-
-model = YOLO("mixed_freeze.pt")
-
-# Use conf=0.487 for daytime, conf=0.442 for nighttime
-results = model.predict("your_image.jpg", conf=0.442)
-results[0].show()
-```
-
 ## Notebook
 
 The main experiment notebook: `course_work.ipynb`
+
